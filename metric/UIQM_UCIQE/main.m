@@ -4,7 +4,7 @@ close all;
 
 
 
-input_folder = './raw-890';
+input_folder = '../output_2.375';
 filepaths = dir(fullfile(input_folder,'*.png'));
 
 ave_uiqm = 0;
@@ -16,5 +16,5 @@ for num = 1 : length(filepaths)
     ave_uciqe =  ave_uciqe + UCIQE(image);
     
 end
-ave_uiqm = ave_uiqm / 890.0;
-ave_uciqe = ave_uciqe / 890.0;
+%ave_uiqm = ave_uiqm / 890.0;
+%ave_uciqe = ave_uciqe / 890.0;
